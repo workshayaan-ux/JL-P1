@@ -11,3 +11,6 @@ print(x*8)
 print(x*9)
 print(x*10)
 print("This is the table of", x, "uptil 10")
+
+for i in range(11):
+    print(x*i)
