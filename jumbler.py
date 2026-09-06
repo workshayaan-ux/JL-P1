@@ -1385,17 +1385,30 @@ X = [
     "zoom"
 ]
 y = random.choice(X)
+
 def jumble(e):
     y = list(e)
     random.shuffle(y)
     return "".join(y)
+
 wot = jumble(y)
+
 print(wot)
 print("try to solve")
-for i in range(1, 6):
+
+i = 1
+
+while i <= 5:
     a = input()
+
     if a == y:
         print("congrats")
+        break
     else:
-        print(y)
+        i = i + 1
+
+        if i == 5:
+            print("you lose")
+            print(y)
+            break
 
